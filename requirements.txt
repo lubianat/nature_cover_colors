@@ -6,3 +6,4 @@ opencv-python
 pytesseract
 pandas
 playwright
+tqdm
