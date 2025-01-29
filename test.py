@@ -19,7 +19,7 @@ CACHE_DIR.mkdir(exist_ok=True)
 VOLUMES_FILE = CACHE_DIR / "volumes.json"
 ISSUES_FILE = CACHE_DIR / "issues.json"
 COVERS_FILE = CACHE_DIR / "nature_covers_sorted.csv"
-HTML_FILE = Path("nature_color_spectrum.html")
+HTML_FILE = Path("index.html")
 NATURE_URL_TEMPLATE = "https://www.nature.com/nature/volumes/{volume}/issues/{issue}"
 
 OUTPUT_DIR.mkdir(exist_ok=True)
@@ -138,7 +138,7 @@ def generate_html(covers_data):
 
     html_content = """<html>
     <head>
-        <title>Nature Covers: Dark vs Light</title>
+        <title>Nature Covers 2024: Dark vs Light</title>
         <style>
             body { background-color: black; text-align: center; color: white; font-family: Arial, sans-serif; }
             .container { display: flex; flex-direction: row; justify-content: space-evenly; align-items: flex-start; padding: 20px; }
