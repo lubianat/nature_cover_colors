@@ -67,7 +67,7 @@ def rgb_to_wavelength(rgb):
     return 380 + (h * (700 - 380))
 
 # === FUNCTION 4: CHECK IMAGE BRIGHTNESS ===
-def is_image_dark(image_path, threshold=100):
+def is_image_dark(image_path, threshold=110):
     """Determines if an image is 'dark' based on average brightness."""
     img = Image.open(image_path).convert("L")  # Convert to grayscale
     avg_brightness = np.mean(np.array(img))  # Calculate brightness
